@@ -3,87 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fahsay Paksee | Portfolio</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f7f6;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .card {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            max-width: 400px;
-            width: 90%;
-            text-align: center;
-        }
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            background: #007bff;
-            margin: 0 auto 1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 3rem;
-            font-weight: bold;
-        }
-        h1 { margin: 10px 0; color: #2c3e50; font-size: 1.5rem; }
-        p { color: #7f8c8d; line-height: 1.6; }
-        .info-section {
-            text-align: left;
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-        }
-        .tag {
-            display: inline-block;
-            background: #e1f5fe;
-            color: #039be5;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            margin: 5px;
-        }
-        .contact-btn {
-            display: block;
-            margin-top: 20px;
-            padding: 10px;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-        .contact-btn:hover { background: #0056b3; }
-    </style>
+    <title>My Portfolio | ข้อมูลส่วนตัว</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="card">
-    <div class="profile-img">ฟ</div>
-    <h1>นางสาว ฟ้าใส ปักษี</h1>
-    <p>นักศึกษาผู้กระตือรือร้นในการเรียนรู้สิ่งใหม่ๆ</p>
-    
-    <div class="info-section">
-        <p><strong>อายุ:</strong> 19 ปี</p>
-        <p><strong>งานอดิเรก:</strong></p>
-        <span class="tag">📚 หาความรู้ใส่ตัว</span>
-        <span class="tag">🎧 ฟังเพลง</span>
-    </div>
+    <header>
+        <div class="container">
+            <h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน</h1>
+            <p>นักพัฒนาซอฟต์แวร์ / นักเรียน / สิ่งที่คุณเป็น</p>
+        </div>
+    </header>
 
-    <a href="mailto:368368121034-st@rmutsb.ac.th" class="contact-btn">ส่งอีเมลหาฉัน</a>
-</div>
+    <section id="about" class="container">
+        <h2>เกี่ยวกับฉัน</h2>
+        <p>สวัสดี! ผมชื่อ [ฟ้าใส ปักษี] ผมมีความสนใจในด้าน [สิ่งที่คุณสนใจ] และกำลังเรียนรู้เรื่องการสร้างเว็บไซต์</p>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>ทักษะของฉัน</h2>
+        <ul>
+            <li>HTML / CSS / JavaScript</li>
+            <li>Python</li>
+            <li>Graphic Design</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>ติดต่อฉัน</h2>
+        <p>Email: yourname@example.com</p>
+        <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Created by [ชื่อของคุณ]</p>
+    </footer>
 
 </body>
 </html>
