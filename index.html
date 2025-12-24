@@ -3,41 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | ข้อมูลส่วนตัว</title>
+    <title>My Portfolio | [ชื่อของคุณ]</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
+    <nav>
+        <div class="container nav-content">
+            <div class="logo">PORTFOLIO</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
         <div class="container">
-            <h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน</h1>
-            <p>นักพัฒนาซอฟต์แวร์ / นักเรียน / สิ่งที่คุณเป็น</p>
+            <h1>สวัสดี! ผมชื่อ <span>[ชื่อของคุณ]</span></h1>
+            <p>I'm a Passionate Developer & Tech Enthusiast</p>
+            <a href="#contact" class="btn">พูดคุยกับผม</a>
         </div>
     </header>
 
-    <section id="about" class="container">
-        <h2>เกี่ยวกับฉัน</h2>
-        <p>สวัสดี! ผมชื่อ [ฟ้าใส ปักษี] ผมมีความสนใจในด้าน [สิ่งที่คุณสนใจ] และกำลังเรียนรู้เรื่องการสร้างเว็บไซต์</p>
-    </section>
+    <main class="container">
+        <section id="about" class="card">
+            <h2>เกี่ยวกับฉัน</h2>
+            <p>ผมเป็นคนที่ชื่นชอบในการสร้างสรรค์เทคโนโลยีใหม่ๆ ปัจจุบันกำลังมุ่งเน้นพัฒนาทักษะด้าน Web Development และชอบเรียนรู้เครื่องมือใหม่ๆ อยู่เสมอ</p>
+        </section>
 
-    <section id="skills" class="container">
-        <h2>ทักษะของฉัน</h2>
-        <ul>
-            <li>HTML / CSS / JavaScript</li>
-            <li>Python</li>
-            <li>Graphic Design</li>
-        </ul>
-    </section>
+        <section id="skills">
+            <h2 class="section-title">ทักษะความสามารถ</h2>
+            <div class="skills-grid">
+                <div class="skill-item">HTML & CSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">React</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">UI Design</div>
+                <div class="skill-item">Git / GitHub</div>
+            </div>
+        </section>
 
-    <section id="contact" class="container">
-        <h2>ติดต่อฉัน</h2>
-        <p>Email: yourname@example.com</p>
-        <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
-    </section>
+        <section id="contact" class="card contact-section">
+            <h2>ช่องทางการติดต่อ</h2>
+            <div class="contact-links">
+                <p>📧 Email: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
+                <p>🐙 GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Created by [ชื่อของคุณ]</p>
+        <p>© 2025 [ชื่อของคุณ]. Built with ❤️ and Code.</p>
     </footer>
 
 </body>
