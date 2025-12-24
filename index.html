@@ -3,61 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | [ชื่อของคุณ]</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>My Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Sarabun:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- ส่วนที่ 1: ตั้งค่าสีและตัวอักษร (แก้ไขตรงนี้ได้เลย) --- */
+        :root {
+            --main-bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* สีพื้นหลังแบบไล่เฉด */
+            --card-color: #ffffff; /* สีพื้นหลังของกล่องข้อความ */
+            --accent-color: #4a90e2; /* สีเน้น เช่น ปุ่ม หรือ หัวข้อ */
+            --text-color: #2d3436; /* สีตัวอักษรหลัก */
+            --font-main: 'Kanit', sans-serif;
+        }
+
+        body {
+            background: var(--main-bg);
+            background-attachment: fixed; /* ทำให้พื้นหลังไม่เลื่อนตาม */
+            font-family: var(--font-main);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* --- ส่วนที่ 2: การจัดวาง (Layout) --- */
+        .container {
+            width: 90%;
+            max-width: 700px;
+            margin: 50px 0;
+        }
+
+        .profile-card {
+            background: var(--card-color);
+            padding: 40px;
+            border-radius: 25px; /* ขอบมนสวยงาม */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* เงาฟุ้งๆ */
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        /* เอฟเฟกต์เวลาเอาเมาส์ไปวาง */
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* --- ส่วนที่ 3: จัดการข้อความ (Typography) --- */
+        h1 {
+            color: var(--accent-color);
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-family: 'Sarabun', sans-serif; /* ฟอนต์เนื้อหาที่อ่านง่าย */
+            line-height: 1.8; /* ระยะห่างบรรทัดที่พอดี */
+            color: #636e72;
+            font-size: 1.1rem;
+        }
+
+        .highlight-box {
+            background: #f1f2f6;
+            padding: 15px;
+            border-left: 5px solid var(--accent-color);
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .social-links {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: var(--accent-color);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            margin: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #357abd;
+            box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
+        }
+
+        /* สำหรับมือถือ */
+        @media (max-width: 480px) {
+            h1 { font-size: 1.8rem; }
+            .profile-card { padding: 25px; }
+        }
+    </style>
 </head>
 <body>
 
-    <nav>
-        <div class="container nav-content">
-            <div class="logo">PORTFOLIO</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="container">
+        <div class="profile-card">
+            <h1>สวัสดีครับ! ผมชื่อ [ชื่อของคุณ]</h1>
+            <p>ยินดีที่ได้รู้จักครับ ผมเป็นคนชื่นชอบในด้านการพัฒนาตัวเองและการเขียนโปรแกรม เว็บไซต์นี้สร้างขึ้นเพื่อเก็บรวบรวมข้อมูลและผลงานของผม</p>
 
-    <header class="hero">
-        <div class="container">
-            <h1>สวัสดี! ผมชื่อ <span>[ชื่อของคุณ]</span></h1>
-            <p>I'm a Passionate Developer & Tech Enthusiast</p>
-            <a href="#contact" class="btn">พูดคุยกับผม</a>
-        </div>
-    </header>
-
-    <main class="container">
-        <section id="about" class="card">
-            <h2>เกี่ยวกับฉัน</h2>
-            <p>ผมเป็นคนที่ชื่นชอบในการสร้างสรรค์เทคโนโลยีใหม่ๆ ปัจจุบันกำลังมุ่งเน้นพัฒนาทักษะด้าน Web Development และชอบเรียนรู้เครื่องมือใหม่ๆ อยู่เสมอ</p>
-        </section>
-
-        <section id="skills">
-            <h2 class="section-title">ทักษะความสามารถ</h2>
-            <div class="skills-grid">
-                <div class="skill-item">HTML & CSS</div>
-                <div class="skill-item">JavaScript</div>
-                <div class="skill-item">React</div>
-                <div class="skill-item">Python</div>
-                <div class="skill-item">UI Design</div>
-                <div class="skill-item">Git / GitHub</div>
+            <div class="highlight-box">
+                <strong>📌 สิ่งที่ฉันสนใจ:</strong>
+                <ul style="margin-top: 10px;">
+                    <li>การสร้างเว็บไซต์ (Web Development)</li>
+                    <li>การถ่ายภาพและตัดต่อ</li>
+                    <li>การเรียนรู้ภาษาใหม่ๆ</li>
+                </ul>
             </div>
-        </section>
 
-        <section id="contact" class="card contact-section">
-            <h2>ช่องทางการติดต่อ</h2>
-            <div class="contact-links">
-                <p>📧 Email: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
-                <p>🐙 GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+            <p>หากคุณต้องการพูดคุยหรือติดต่องาน สามารถคลิกที่ปุ่มด้านล่างนี้ได้เลยครับ</p>
+
+            <div class="social-links">
+                <a href="mailto:your-email@gmail.com" class="btn">ส่งอีเมลหาผม</a>
+                <a href="https://github.com/yourusername" class="btn" style="background: #2d3436;">GitHub ของผม</a>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 [ชื่อของคุณ]. Built with ❤️ and Code.</p>
-    </footer>
+        </div>
+    </div>
 
 </body>
 </html>
